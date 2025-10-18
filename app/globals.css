@@ -3,11 +3,23 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-green: #10b981;
+  --primary-teal: #14b8a6;
+  --primary-pink: #ec4899;
+  --light-green: #d1fae5;
+  --light-teal: #ccfbf1;
+  --light-pink: #fce7f3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary-green: var(--primary-green);
+  --color-primary-teal: var(--primary-teal);
+  --color-primary-pink: var(--primary-pink);
+  --color-light-green: var(--light-green);
+  --color-light-teal: var(--light-teal);
+  --color-light-pink: var(--light-pink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -23,4 +35,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #14b8a6 0%, #10b981 50%, #ec4899 100%);
+  }
+  
+  .gradient-section {
+    background: linear-gradient(to right, #d1fae5, #ccfbf1, #fce7f3);
+  }
 }

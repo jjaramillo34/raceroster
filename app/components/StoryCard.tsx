@@ -98,7 +98,7 @@ export default function StoryCard({
               {memorableQuote && (
                 <div className={`${colors.bg} border-l-4 ${colors.border} p-6 rounded-r-2xl`}>
                   <div className="flex items-start gap-3">
-                    <span className={`text-5xl ${colors.text} font-serif leading-none`}>"</span>
+                    <span className={`text-5xl ${colors.text} font-serif leading-none`}>&ldquo;</span>
                     <div>
                       <p className={`text-xl font-bold ${colors.text} italic leading-relaxed`}>
                         {memorableQuote.text}

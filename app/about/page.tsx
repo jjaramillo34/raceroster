@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Calendar, MapPin, Clock, Users, Heart, Target, Award, Activity } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import DonateButton from '../components/DonateButton';
@@ -185,13 +186,13 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <DonateButton size="large" variant="primary" />
-              <a
+              <Link
                 href="/#register"
                 className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-teal-600 hover:to-emerald-600 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
               >
                 <Users className="w-5 h-5" />
                 <span>Register to Run</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

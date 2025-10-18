@@ -11,66 +11,82 @@ export default function Home() {
       <Navigation />
       <main className="min-h-screen">
         {/* Hero Section */}
-      <section className="gradient-hero text-white py-20 px-4">
+      <section className="bg-gradient-to-br from-pink-100 via-rose-50 to-pink-100 py-20 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative w-48 h-48 md:w-64 md:h-64">
-              <Image
-                src="/images/logotop.png"
-                alt="LightUpMBC Logo"
-                fill
-                className="object-contain drop-shadow-2xl"
-                priority
-              />
+          {/* Top Section - Light Pink Background */}
+          <div className="mb-12">
+            <p className="text-2xl md:text-3xl font-bold text-gray-700 mb-4">5th Annual</p>
+            
+            {/* Colorful Title */}
+            <div className="mb-6">
+              <p className="text-3xl md:text-5xl font-bold mb-2">
+                <span className="text-blue-600">Miles for</span>{' '}
+                <span className="text-emerald-600">MBC and</span>{' '}
+                <span className="text-pink-600">Kelly Marie</span>
+              </p>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-gray-700 mb-6">Presents The</p>
+            
+            {/* LightUpMBC with colors */}
+            <h1 className="text-5xl md:text-8xl font-bold mb-8">
+              <span className="text-blue-600">#LightUp</span>
+              <span className="text-emerald-600">MBC</span>
+            </h1>
+            
+            {/* Howard Beach Color Fun Run */}
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+              Howard Beach<br />
+              <span className="text-gray-800">Color Fun Run</span>
+            </h2>
+            
+            {/* METAvivor */}
+            <div className="mb-8">
+              <p className="text-xl md:text-2xl text-gray-700 italic mb-2">to benefit</p>
+              <p className="text-3xl md:text-4xl font-bold">
+                <span className="text-blue-600">META</span>
+                <span className="text-pink-600">vivor</span>
+              </p>
+            </div>
+            
+            {/* Event Details */}
+            <div className="space-y-2 text-lg md:text-xl text-gray-700 mb-8">
+              <p className="font-semibold">October 25, 2025</p>
+              <p>Frank M. Charles Memorial Park</p>
+              <p>Howard Beach, Queens, NY</p>
             </div>
           </div>
-          <p className="text-xl md:text-2xl font-semibold mb-2">5th Annual</p>
-          <p className="text-2xl md:text-3xl mb-4">Miles for MBC and Kelly Marie</p>
-          <p className="text-xl md:text-2xl mb-4">Presents The</p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8">
-            LightUpMBC
-          </h1>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Howard Beach Color Fun Run
-          </h2>
-          <p className="text-2xl md:text-3xl mb-8">to benefit METAvivor</p>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
-              <Calendar className="w-6 h-6" />
-              <span className="text-lg font-semibold">October 25, 2025</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-6 py-3 rounded-full">
-              <MapPin className="w-6 h-6" />
-              <span className="text-lg font-semibold">Howard Beach, Queens, NY</span>
-            </div>
-          </div>
-
-          <div className="space-y-4 text-lg md:text-xl">
-            <p className="font-semibold">Frank M. Charles Memorial Park</p>
-            <p>Meet at: 98 St. & 165 Ave.</p>
-            <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
-              <div className="flex items-center justify-center gap-2">
-                <Clock className="w-5 h-5" />
-                <span>Check-In: 2pm</span>
+          {/* Bottom Section - White Background with Shadow */}
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
+            <div className="space-y-6">
+              <div className="text-2xl md:text-3xl font-bold text-emerald-600">
+                Meet at: 98 St. & 165 Ave.
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <Activity className="w-5 h-5" />
-                <span>Race Kick Off: 3pm</span>
+              
+              <div className="flex flex-col md:flex-row justify-center gap-8">
+                <div className="text-xl md:text-2xl font-bold text-blue-600">
+                  Check-In: 2pm
+                </div>
+                <div className="text-xl md:text-2xl font-bold text-pink-600">
+                  Race Kick Off: 3pm
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <DonateButton size="large" variant="primary" />
-            <a
-              href="#register"
-              className="bg-gradient-to-r from-teal-500 to-emerald-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-teal-600 hover:to-emerald-600 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
-            >
-              <Users className="w-5 h-5" />
-              <span>Register to Run</span>
-            </a>
+            
+            {/* Call to Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+              <DonateButton size="large" variant="primary" />
+              <a
+                href="https://raceroster.com/events/2025/101366/miles-for-mbc-and-kelly-marie/register?ref=event-right-sidebar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-emerald-600 hover:to-teal-600 transition-all shadow-lg hover:shadow-xl transform hover:scale-105 inline-flex items-center justify-center gap-2"
+              >
+                <Users className="w-5 h-5" />
+                <span>Register to Run</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

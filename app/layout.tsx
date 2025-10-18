@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LightUpMBC - Howard Beach Color Fun Run | October 25, 2025",
   description: "Join us for the 5th Annual Miles for MBC and Kelly Marie presents LightUpMBC Howard Beach Color Fun Run to benefit METAvivor. Support Metastatic Breast Cancer research. 100% of net proceeds fund MBC research.",
+  icons: {
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
+  },
 };
 
 export default function RootLayout({

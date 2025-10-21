@@ -41,6 +41,12 @@ export default function Navigation() {
             >
               About
             </Link>
+            <Link
+              href="/gallery"
+              className="text-gray-700 hover:text-teal-600 font-semibold transition-colors"
+            >
+              Gallery
+            </Link>
             <a
               href="#sponsors"
               className="text-gray-700 hover:text-teal-600 font-semibold transition-colors"
@@ -88,6 +94,13 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               About
+            </Link>
+            <Link
+              href="/gallery"
+              className="block text-gray-700 hover:text-teal-600 font-semibold transition-colors py-2"
+              onClick={() => setIsOpen(false)}
+            >
+              Gallery
             </Link>
             <a
               href="#sponsors"

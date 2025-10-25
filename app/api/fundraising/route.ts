@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
+import chromium from '@sparticuz/chromium';
 
 interface FundraisingData {
   raisedAmount: string;
@@ -13,8 +14,9 @@ export async function GET(request: NextRequest) {
   
   try {
     const browser = await puppeteer.launch({
+      args: chromium.args,
+      executablePath: await chromium.executablePath(),
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     
     const page = await browser.newPage();
@@ -81,7 +83,9 @@ export async function GET(request: NextRequest) {
     
     return NextResponse.json(data, {
       headers: {
-        'Cache-Control': 'public, s-maxage=21600, stale-while-revalidate=3600' // Cache for 6 hours
+        'Cache-Control': isCron 
+          ? 'public, s-maxage=21600, stale-while-revalidate=3600' // Cache for 6 hours
+          : 'no-cache, no-store, must-revalidate' // No cache for manual requests
       }
     });
     

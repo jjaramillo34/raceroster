@@ -4,5 +4,10 @@
       "path": "/api/fundraising?cron=true",
       "schedule": "0 */6 * * *"
     }
-  ]
+  ],
+  "functions": {
+    "app/api/fundraising/route.ts": {
+      "maxDuration": 30
+    }
+  }
 }

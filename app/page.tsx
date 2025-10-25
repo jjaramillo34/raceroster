@@ -4,6 +4,8 @@ import SponsorShowcase from './components/SponsorShowcase';
 import Navigation from './components/Navigation';
 import StoryCard from './components/StoryCard';
 import DonateButton from './components/DonateButton';
+import FundraisingAmount from './components/FundraisingAmount';
+import FundraisingProgress from './components/FundraisingProgress';
 
 export default function Home() {
   return (
@@ -110,6 +112,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Fundraising Progress Section */}
+      <FundraisingProgress />
 
       {/* Get Involved Section */}
       <section id="register" className="py-16 px-4 bg-white">
@@ -274,9 +279,13 @@ export default function Home() {
 
               {/* Stats */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/30">
-                <div>
-                  <p className="text-4xl font-bold mb-2">$9,473+</p>
-                  <p className="text-white/90">Already Raised</p>
+                <div className="flex flex-col items-center">
+                  <FundraisingAmount 
+                    size="large" 
+                    className="text-white"
+                    showLastUpdated={true}
+                  />
+                  <p className="text-white/90 mt-2">Already Raised</p>
                 </div>
                 <div>
                   <p className="text-4xl font-bold mb-2">100%</p>

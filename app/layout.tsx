@@ -17,9 +17,9 @@ export const metadata: Metadata = {
   title: "LightUpMBC - Howard Beach Color Fun Run | October 25, 2025",
   description: "Join us for the 5th Annual Miles for MBC and Kelly Marie presents LightUpMBC Howard Beach Color Fun Run to benefit METAvivor. Support Metastatic Breast Cancer research. 100% of net proceeds fund MBC research.",
   icons: {
-    icon: 'favicon.ico',
-    shortcut: 'favicon.ico',
-    apple: 'favicon.ico',
+    icon: '/images/logo.png',
+    shortcut: '/images/logo.png',
+    apple: '/images/logo.png',
   },
 };
 

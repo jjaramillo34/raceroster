@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/fundraising?cron=true",
+      "schedule": "0 */6 * * *"
+    }
+  ]
+}

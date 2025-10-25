@@ -1,5 +1,4 @@
-import { Calendar, MapPin, Clock, Heart, Users, DollarSign, Share2, Trophy, Activity } from 'lucide-react';
-import Image from 'next/image';
+import { Clock, Heart, Users, DollarSign, Share2, Trophy, Activity } from 'lucide-react';
 import SponsorShowcase from './components/SponsorShowcase';
 import Navigation from './components/Navigation';
 import StoryCard from './components/StoryCard';

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { Calendar, MapPin, Clock, Users, Heart, Target, Award, Activity, Star, Zap } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import DonateButton from '../components/DonateButton';

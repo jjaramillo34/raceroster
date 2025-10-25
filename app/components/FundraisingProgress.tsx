@@ -36,7 +36,7 @@ export default function FundraisingProgress() {
             Community Impact
           </h2>
           <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto">
-            Together, we're making a real difference in the fight against Metastatic Breast Cancer
+            Together, we&apos;re making a real difference in the fight against Metastatic Breast Cancer
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function FundraisingProgress() {
                 <Users className="w-12 h-12 text-pink-500" />
               </div>
               <h4 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                Thank You for Your Love & Support! 💕
+                Thank You for Your Love &amp; Support! 💕
               </h4>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                 Your generosity is bringing us closer to finding a cure for Metastatic Breast Cancer. 
